@@ -12,10 +12,11 @@ def transform_data_uni():
 def load_to_s3():
     pass
 
-# Configuracion del login
+# Configuracion del loggs
 logging.basicConfig(
     level=logging.INFO,
-    datefmt='%Y-%M-%D'
+    datefmt='%Y-%M-%D',
+    format='%(asctime)s- %(logger)s - %(mensaje)s'
 )
 
 default_args = {

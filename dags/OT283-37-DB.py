@@ -6,7 +6,9 @@ import time
 from sqlalchemy import exc, create_engine, inspect
 from decouple import config
 
-def check_db_connection():
+DB_DATA_CONNECT = "postgresql://username:password@host:port/database"
+
+def db_connection():
     """
     Funcion conexión a la base de datos
         * Definimos un bucle para controlar que se ejecute solamente si los intentos son menor o igual a 5
@@ -37,10 +39,13 @@ def check_db_connection():
             time.sleep(30)
     return engine
 
-# Configuracion del login
+logger = logging.getLogger('Universidades A')
+
+# Configuracion del loggs
 logging.basicConfig(
     level=logging.INFO,
-    datefmt='%Y-%M-%D'
+    datefmt='%Y-%M-%D',
+    format='%(asctime)s- %(logger)s - %(mensaje)s'
 )
 
 default_args = {
@@ -58,6 +63,6 @@ with DAG(
 ) as dag:
     task_check_db_connection = PythonOperator(
         task_id = 'check_db_connection',
-        python_callable = check_db_connection,
+        python_callable = db_connection,
         dag=dag
     )
