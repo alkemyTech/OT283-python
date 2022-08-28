@@ -67,11 +67,47 @@ def get_data(
         logging.info(f"getting the data from {table_name}")
     return extract_path_dict
 
-def transform_data():
-    logging.info(f"transforming the data from {table_name}")
+##      Declaramos las inputs de la función
+path_dict = get_data(
+                        schema_name = SCHEMA_NAME, 
+                        engine = engine
+                        )            ##  transform_data(schema_name, path_dict)
+
+##      Definimos los agumentos del python callable           
+transform_data_kwargs = {
+                        "schema_name" : schema_name,
+                        "path_dict" : path_dict
+                        }
+
+def transform_data(
+                    schema_name, 
+                    path_dict
+                    ):
+    transformed_path_dict = {}
+    for table_name in schema_name:
+        path = path_dict[f"{table_name}"]
+        transformed_path_dict[f"{table_name}"] = transform_dts(
+                                                                table_name, 
+                                                                path
+                                                                )
+        logging.info(f"transforming the data from {table_name}")
+    return transformed_path_dict
+
+
+##      Declaramos las inputs de la función
+
+##      Definimos los agumentos del python callable           
+load_data_kwargs = {}
 
 def load_data():
     logging.info("loading the data")
+
+
+#   Creamos un diccionario gloval de argumentos a partir de los diccionarios de argumentos de cada función
+op_kwargs = {"get_data" : get_data_kwargs,
+            "transform_data" : transform_data_kwargs,
+            "load_data" : load_data_kwargs
+            }
 
 # Definimos el DAG
 with DAG(
@@ -85,7 +121,7 @@ with DAG(
         get_data_task = PythonOperator(
                                         task_id = "get_data", 
                                         python_callable = get_data,
-                                        op_kwarg = get_data_kwargs,
+                                        op_kwargs = op_kwargs["get_data"],
                                         retries = 5, 
                                         retry_delay = timedelta(minutes=5),
                                         dag = dag
@@ -93,11 +129,13 @@ with DAG(
         transform_data_task = PythonOperator(
                                             task_id = "transform_data", 
                                             python_callable = transform_data,
+                                            op_kwargs = op_kwargs["transform_data"],
                                             dag = dag
                                             )
         load_data_task = PythonOperator(
                                         task_id = "load_data", 
                                         python_callable = load_data,
+                                        op_kwargs = op_kwargs["load_data"],
                                         dag = dag
                                        )
 
