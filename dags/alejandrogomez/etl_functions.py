@@ -12,7 +12,7 @@ HOST = config('HOST')
 PORT = config('PORT')
 DB_NAME = config('DB_NAME')
 # Get main path directory
-DATA_DIR = Path(f"{os.path.dirname(os.path.realpath(__file__))}").parent
+DATA_DIR = Path(f"{os.path.dirname(os.path.realpath(__file__))}").parent.parent
 
 
 def db_connection():
@@ -47,7 +47,7 @@ def extract_db(*args):
         # We obtain averyone name of files to build path and build filders and files names
         
         #We obtain sql path and then read it and save the information into a variable
-        SQL_DIR = Path(f'{DATA_DIR}/sql/{archivo_query}')
+        SQL_DIR = Path(f'{DATA_DIR}/sql/alejandrogomez/{archivo_query}')
         with open(SQL_DIR,'r') as sql:
             archivo_sentencia = sql.read()
 

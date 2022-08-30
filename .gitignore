@@ -2,7 +2,6 @@ logs
 venv-alkemy
 airflow-webserver.*
 .env*
-.github*
 airflow.*
 standalone_admin_password.*
 webserver_config.*

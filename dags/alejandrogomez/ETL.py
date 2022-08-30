@@ -3,9 +3,9 @@ from datetime import timedelta, datetime
 from sqlalchemy import create_engine
 from airflow.operators.python import PythonOperator
 import logging
-from etl_functions import extract_db
-from etl_functions import process_data_uni
-from etl_functions import upload_to_s3
+from alejandrogomez.etl_functions import extract_db
+from alejandrogomez.etl_functions import process_data_uni
+from alejandrogomez.etl_functions import upload_to_s3
 
 
 
@@ -60,5 +60,5 @@ with DAG(
     # execution flow
     extract >> transform >> load
 
-# if __name__ == '__main__':
-#     extract_db('flores.sql','villaMaria.sql')
+if __name__ == '__main__':
+    extract_db('flores.sql','villaMaria.sql')
