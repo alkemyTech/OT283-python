@@ -8,53 +8,52 @@ from airflow.operators.python import PythonOperator
 import time
 from sqlalchemy import exc, create_engine, inspect
 
-# Tomamos la fecha actual y el directorio raiz para armar la ruta de la carpeta que contendra los logs de el dag
+# root path
 ROOT_DIR = Path('../')
 today = datetime.now()
-# Traemos de .env las credenciales para la base de datos
+# database credetials in .env file
 DB_USER = config('DB_USER')
 PASSWORD = config('PASSWORD')
 HOST = config('HOST')
 PORT = config('PORT')
 DB_NAME = config('DB_NAME')
 
-def db_connection():
+def verify_db_connection():
     """
-    Funcion conexión a la base de datos
-        * Definimos un bucle para controlar que se ejecute solamente si los intentos son menor o igual a 5
-        o existen las tablas en la base de datos
+    Function that connect with database
+        * We define a function that control the execution, when execution ocure more than 5 times the database connection end
     """
     flag = False
     count = 0
-    logging.info("Conectando a la base de datos")
+    logging.info(" connecting to DB ")
     while not flag and count < 5:
         logging.info(f"Intento N°{count}")
         try:
-            # Establezco la coneccion mendiante la variable de entorno que contiene el enlace a la db postgre
+            # We use env variable to connecto to postgre database
             engine = create_engine(f"postgresql://{DB_USER}:{PASSWORD}@{HOST}:{PORT}/{DB_NAME}")
             conn = engine.connect()
-            logging.info("Conexion a la base de datos realizada exitosamente")
+            logging.info(" Connection succed ")
 
-            # Vemos que las tablas existan para ver si se vuelve a intentar conectar o no
+            # Check that tables exist, if not we connect one more time to the database
             if engine.dialect.has_table(conn,"flores_comahue") and engine.dialect.has_table(conn, 'salvador_villa_maria'):  
-                logging.info("Las tablas existen")
+                logging.info(" Tables exist ")
                 flag=True
             else:
-                # En caso de que no se encuentren las tablas se incrementa la variable contados de control y se hace un sleep de 30 segundos entre un intento y otros para evitar delays de conexion
-                logging.info("No existen las tablas en la base de datos")
+                # The count variable incremet a unit, and sleep 30 seconds between executions to avoid connections delays
+                logging.info(" Tables not exist ")
                 count = count + 1
                 time.sleep(30)
             
         except exc.SQLAlchemyError:
-            # Se incrementa la variable contador de control en caso de encontrar un error, y de igual manera se espera 30 segundo antes del siguiente reintegro
+            # If occurs an arror, the count variable increment a unit, and the code sleep 30 seconds until the next execution
             count = count + 1
             time.sleep(30)
 
-    return engine
+    return True
 
 logger = logging.getLogger('Universidades A')
 
-# Configuracion del loggs
+# logs configuration
 logging.basicConfig(
     filename= f"{ROOT_DIR}../logs/retry-{today}.log",
     level=logging.INFO,
@@ -68,16 +67,16 @@ default_args = {
     'retry_delay':timedelta(seconds=30)
 }
 
-# Definimos propiedades del dag
+# We define DAG configuration
 with DAG(
     'check_db_connection',
-    description='Comprobar la conexion a la base de datos',
+    description=' Check your DB connection ',
     schedule_interval=timedelta(days=1),
     start_date=datetime(2022,8,23),
 ) as dag:
 
     task_check_db_connection = PythonOperator(
         task_id = 'check_db_connection',
-        python_callable = db_connection,
+        python_callable = verify_db_connection,
         dag=dag
     )
