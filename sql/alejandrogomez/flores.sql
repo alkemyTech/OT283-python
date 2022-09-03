@@ -1,5 +1,5 @@
 SELECT 
-	SUBSTRING(name, 1, position(' ' in name)-1) AS fist_name, 
+	SUBSTRING(name, 1, position(' ' in name)-1) AS first_name, 
 	SUBSTRING(name, position(' ' in name)+1, char_length(name)) AS last_name, 
 	sexo AS gender, 
 	direccion AS location, 

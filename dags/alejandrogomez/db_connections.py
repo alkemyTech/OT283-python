@@ -55,7 +55,6 @@ logger = logging.getLogger('Universidades A')
 
 # logs configuration
 logging.basicConfig(
-    filename= f"{ROOT_DIR}../logs/retry-{today}.log",
     level=logging.INFO,
     datefmt='%Y-%M-%D',
     format='%(asctime)s- %(logger)s - %(mensaje)s'

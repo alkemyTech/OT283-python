@@ -1,4 +1,3 @@
-.github*
 logs
 venv-alkemy
 airflow-webserver.*
