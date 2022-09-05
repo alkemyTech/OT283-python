@@ -1,0 +1,105 @@
+university career inscription_date firstname lastname gender age location postal_code email
+"universidad nacional de río cuarto" "licenciatura en terapia ocupacional" 2021-01-20 kenneth chung Male 88 "Unit-2453-box-8062
+dpo-ap-24105" 6451 Margaret92@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en terapia ocupacional" 2021-01-20 kenneth chung Male 88 "Unit-2453-box-8062
+dpo-ap-24105" 5561 Margaret92@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en ciencias de la educación " 2020-10-20 james andersen Male 25 "5436-randy-summit
+south-melissafurt,-ak-87534" 6437 Rachelcobb@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en gestión de agroalimentos" 2020-11-21 karen lewis Female 73 "68423-alex-ports-suite-312
+lake-kimberly,-ia-94129" 7639 Mirandadaniel@gmail.com
+"universidad nacional de río cuarto" arquitectura 2020-12-19 andrew villegas Male 101 "21692-lopez-isle
+jasonhaven,-sd-98454" 2179 Smithmichael@hotmail.com
+"universidad nacional de río cuarto" agronomía 2020-10-19 chad wilson Male 87 "632-church-flats
+south-suzanneshire,-az-60769" 1686 Robertjimenez@gmail.com
+"universidad nacional de río cuarto" "contador público " 2020-12-20 brian shannon Male 93 "Psc-6549,-box-2076
+apo-aa-66496" 3526 Hernandezregina@hotmail.com
+"universidad nacional de río cuarto" "técnico para bioterios " 2020-12-20 john thompson Male 54 "423-kayla-fields-apt.-826
+lake-peter,-nh-30100" 3557 Ericamoore@gmail.com
+"universidad nacional de río cuarto" "técnico para bioterios " 2020-12-20 john thompson Male 54 "423-kayla-fields-apt.-826
+lake-peter,-nh-30100" 3386 Ericamoore@gmail.com
+"universidad nacional de río cuarto" arquitectura 2020-10-19 tracy mcintosh Female 29 "1636-lori-ville
+lake-sheila,-tn-09372" 6612 Scottvazquez@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en kinesiología y fisiatría" 2020-11-19 william page Male 77 "165-brown-mount
+robinsonside,-id-98642" 8183 Wiselaura@gmail.com
+"universidad nacional de río cuarto" "diseño de imagen y sonido" 2020-12-19 christina thomas Female 7 "7314-rebecca-ridge-apt.-283
+new-ryan,-in-51775" 5707 Qhernandez@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en ciencias de la educación " 2020-10-21 sabrina reynolds Female 13 "63687-munoz-greens-suite-503
+michellemouth,-ms-98640" 6559 Vroberts@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en musicoterapia" 2020-12-19 julia cook Female 49 "Unit-9736-box-2893
+dpo-ae-11119" 6652 Bradydanny@yahoo.com
+"universidad nacional de río cuarto" "diseño industrial" 2020-10-19 troy calderon Male 45 "3659-olson-inlet-apt.-043
+ortizmouth,-tn-13073" 2445 Dennisrichard@hotmail.com
+"universidad nacional de río cuarto" medicina 2021-01-21 katelyn austin Female 86 "619-brandon-ports-suite-580
+port-james,-ak-48290" 3048 Xmiller@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en artes" 2020-10-19 rita torres Female 34 "9031-porter-highway
+new-jennifer,-ar-44395" 1733 Harrisphillip@gmail.com
+"universidad nacional de río cuarto" "técnico para bioterios " 2020-12-21 katelyn thompson Female 28 "280-bell-fords-suite-248
+new-brian,-mo-25730" 6434 Dawnmata@gmail.com
+"universidad nacional de río cuarto" "licenciatura en planificación y diseño del paisaje" 2021-01-21 samantha ballard Female 10 "90902-marc-radial-suite-773
+rogerburgh,-tx-02149" 1889 Gramos@gmail.com
+"universidad nacional de río cuarto" "licenciatura en ciencias ambientales" 2020-12-19 nicole cooper Female 97 "7016-phillips-villages-suite-353
+brucemouth,-ms-77989" 2214 Griffinlarry@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en ciencia y tecnología de alimentos" 2020-09-21 donna moore Female 21 "024-nicole-forges-suite-508
+aprilfurt,-az-74651" 1984 Stuartmatthew@hotmail.com
+"universidad nacional de río cuarto" "ciencias veterinarias" 2021-01-21 joshua perry Male 31 "057-rodriguez-street
+michelleton,-id-97730" 4634 Kelly94@hotmail.com
+"universidad nacional de río cuarto" medicina 2020-12-19 jeffrey anderson Male 101 "47158-baker-branch-apt.-403
+west-matthew,-tx-73153" 8371 Joe80@gmail.com
+"universidad nacional de río cuarto" medicina 2020-12-19 jeffrey anderson Male 101 "47158-baker-branch-apt.-403
+west-matthew,-tx-73153" 6305 Joe80@gmail.com
+"universidad nacional de río cuarto" "licenciatura en ciencias geológicas" 2020-11-20 james smith Male 12 "73428-amber-lane
+new-matthewmouth,-mt-66568" 3050 Jessicagibbs@yahoo.com
+"universidad nacional de río cuarto" farmacia 2020-12-21 matthew meyer Male 27 "484-howard-cove-suite-913
+aliciamouth,-ca-77181" 9211 Drew16@gmail.com
+"universidad nacional de río cuarto" "licenciatura en artes" 2021-01-20 elizabeth cruz Female 16 "2893-gordon-ramp-apt.-794
+jayville,-nc-34972" 3105 Uhenry@gmail.com
+"universidad nacional de río cuarto" "licenciatura en producción de bioimagenes" 2020-11-19 larry jackson Male 60 "6513-keith-mill
+lake-elizabeth,-wi-66281" 3142 Tcummings@hotmail.com
+"universidad nacional de río cuarto" arquitectura 2020-12-21 norman hernandez Male 73 "81524-peterson-avenue
+west-alan,-fl-38084" 3361 Qmathews@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en terapia ocupacional" 2020-11-19 samantha moore Female 78 "Uss-mcdowell
+fpo-ap-15282" 3361 Poconnell@hotmail.com
+"universidad nacional de río cuarto" "técnico para bioterios " 2020-11-21 michelle moss Female 9 "91378-house-spurs-apt.-733
+gordonton,-wa-96994" 5473 Jirwin@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en relaciones del trabajo " 2021-01-21 kevin thomas Male 88 "9745-erin-spring
+west-scott,-ky-88372" 6632 Chad28@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en ciencia y tecnología de alimentos" 2021-01-20 robin nash Female 77 "254-amy-forks
+nancyfurt,-hi-50320" 3300 Jasminebrown@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en administración " 2020-10-20 stephen estrada Male 88 "876-michael-pines
+nolanview,-fl-76635" 2208 Schultzmindy@yahoo.com
+"universidad nacional de río cuarto" arquitectura 2020-09-21 jerry bradley Male 44 "4523-wang-radial
+lake-frankland,-ma-65599" 3358 Kimberlywhitaker@hotmail.com
+"universidad nacional de río cuarto" farmacia 2020-11-19 karen pruitt Female 100 "096-blackwell-heights-apt.-790
+east-holly,-la-23040" 7547 Smithhannah@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en producción de bioimagenes" 2020-12-20 brian bell Male 13 "56812-melvin-village-apt.-542
+east-stephanie,-ri-56718" 4630 Shannongonzalez@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en terapia ocupacional" 2021-01-20 seth caldwell Male 64 "568-garcia-land
+west-stephanie,-md-87141" 6643 Kelly26@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en terapia ocupacional" 2020-11-20 scott cox Male 15 "63299-york-junction-apt.-721
+jorgefort,-ut-91070" 1686 Brendamorales@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en sociología " 2020-10-20 michelle perry Female 76 "9525-julie-street
+new-megan,-vt-04577" 9217 Marcusparks@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en ciencias ambientales" 2020-10-20 marcus fuller Male 11 "08679-stewart-manors
+adkinsmouth,-ia-45507" 8127 Herrerasarah@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en producción de bioimagenes" 2021-01-20 virginia murphy Female 48 "Psc-7859,-box-7031
+apo-aa-93779" 2630 Geraldchandler@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en kinesiología y fisiatría" 2020-11-19 megan stark Female 13 "752-kristie-spur
+paulfort,-md-64500" 2618 Kenneth42@yahoo.com
+"universidad nacional de río cuarto" "ingeniería electrónica" 2020-10-21 adam smith Male 92 "6440-perez-neck
+hallview,-nm-98249" 4184 Therman@yahoo.com
+"universidad nacional de río cuarto" "ingeniería mecánica" 2020-10-21 michael baldwin Male 59 "374-tyler-vista-apt.-289
+port-jamiefurt,-wv-53841" 6013 Victoriahill@gmail.com
+"universidad nacional de río cuarto" "contador público " 2020-12-20 robert keller Male 83 "4508-phillip-ferry
+christianstad,-ma-79507" 3451 Hcarter@yahoo.com
+"universidad nacional de río cuarto" "licenciatura en sociología " 2020-12-19 heather morgan Female 14 "6631-tony-mountains
+karaborough,-vt-75051" 3351 Michaelandrade@hotmail.com
+"universidad nacional de río cuarto" "licenciatura en ciencias de la educación " 2020-12-20 danielle mclean Female 48 "232-amy-ports-suite-342
+karaside,-nh-08311" 2852 Beckdaniel@gmail.com
+"universidad nacional de río cuarto" "licenciatura en ciencias geológicas" 2020-09-20 sara richardson Female 27 "349-bush-groves
+south-cheyenneside,-ny-35789" 3183 Hsavage@gmail.com
+"universidad nacional de río cuarto" "licenciatura en relaciones del trabajo " 2020-10-19 edward wilson Male 10 "97488-ralph-ways
+west-megan,-oh-24110" 6465 Salazaralbert@gmail.com
+"universidad nacional de río cuarto" "contador público " 2020-11-20 alison kaufman Female 43 "5590-white-roads
+port-marco,-nm-94604" 3162 Jade42@yahoo.com
+"universidad nacional de río cuarto" bioquímica 2020-12-21 julie meyer Female 12 "7776-alexandra-harbor
+port-john,-de-06446" 5589 Smithandrew@hotmail.com
