@@ -10,3 +10,4 @@ SQLAlchemy==1.4.39
 sqlparse==0.4.2
 uvicorn==0.18.2
 python-decouple
+pip install 'apache-airflow[amazon]'
