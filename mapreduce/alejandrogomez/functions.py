@@ -42,6 +42,7 @@ def acceptedAnswers(myroot):
             lista.append([cleantext,int(n.attrib["AnswerCount"])])
         except:
             continue
+    logging.info("ACCEPTED ANSWERS LIST CREATED AND RETURNED")
     # Return list of tags and answerscounts
     return lista   
 
@@ -62,6 +63,7 @@ def wordsRelation(myroot):
             lista.append([n.attrib["Body"],int(n.attrib["Score"])])
         except:
             continue
+    logging.info("WORDS RELATION LIST CREATED A RETURNED")
     # Return list of body(words) and score relations
     return lista
 
@@ -82,6 +84,7 @@ def initialFinalTime(myroot):
             lista.append([n.attrib["CreationDate"],n.attrib["ClosedDate"]])
         except:
             continue
+    logging.info("INITIAL FINAL TIME DIFERENCE LIST CREATED AND RETURNED")
     # Return list of body(words) and score relations
     return lista
 
@@ -118,6 +121,8 @@ def reducerAcceptedAnswers(list):
     logging.info("10 Most Accepted Answers")
     for val in high:
         logging.info(f"{val} : {tagCount.get(val)}")
+    
+    return high
 
 
 def reducerWordsRelation(lista):
@@ -129,7 +134,7 @@ def reducerWordsRelation(lista):
             print of relation between length of words and score
     """
     dict = {}
-    # Obtain regular expresion to delete html tags
+    # Obtain regular expresion to delete xml tags
     to_clean = re.compile('<.*?>')
     for i in lista:
         # Wolk along the list and first clean html tags into body with sub function, then split words to create a list, after that put into dictionary length of words list as a key and score as value
@@ -143,6 +148,8 @@ def reducerWordsRelation(lista):
     logging.info("Relation between number of words in a post and their score")
     for val in high:
         logging.info(f"{val} : {dict.get(val)}")
+
+    return high
 
 def reducerInitialFinalTime(lista):
     
@@ -167,3 +174,5 @@ def reducerInitialFinalTime(lista):
     logging.info("Delay answer in posts")
     # Return average of response times, first make division between sumatory of values and length of response list, then make division with 86400 that are seconds in a day, and in the finish round the value
     logging.info(f"{round((sumatory/len(response))/86400)} days")
+
+    return round((sumatory/len(response))/86400)
