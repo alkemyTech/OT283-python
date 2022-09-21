@@ -1,0 +1,9 @@
+logs
+venv-alkemy
+airflow-webserver.*
+.env*
+airflow.*
+standalone_admin_password.*
+webserver_config.*
+__pycache__
+.xml*
